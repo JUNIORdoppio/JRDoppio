@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20250318 13:41:31.229" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Framework" source="C:\Users\user\Downloads\Doppio\Robot Framework">
+<suite id="s1-s1" name="Assignment" source="C:\Users\user\Downloads\Doppio\Robot Framework\Assignment.robot">
+<test id="s1-s1-t1" name="Assignment 1: Scalar Arguments in Robot Framework." line="94">
+<kw name="Validate Age">
+<arg>16</arg>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${age} &gt; 18</arg>
+<arg>Log To Console</arg>
+<arg>Eligible for voting</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not eligible for voting</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not eligible for voting</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.445" endtime="20250318 13:41:31.446"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.445" endtime="20250318 13:41:31.446"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.444" endtime="20250318 13:41:31.446"/>
+</kw>
+<kw name="Validate Age">
+<arg>20</arg>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${age} &gt; 18</arg>
+<arg>Log To Console</arg>
+<arg>Eligible for voting</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not eligible for voting</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Eligible for voting</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.447" endtime="20250318 13:41:31.448"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.447" endtime="20250318 13:41:31.448"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.446" endtime="20250318 13:41:31.448"/>
+</kw>
+<doc>วัตถุประสงค์: เรียนรู้วิธีการส่งและใช้ค่า scalar argument ใน Robot Framework</doc>
+<status status="PASS" starttime="20250318 13:41:31.443" endtime="20250318 13:41:31.448"/>
+</test>
+<test id="s1-s1-t2" name="Assignment 2: Test Print Fruits" line="101">
+<kw name="Print Fruits">
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<for flavor="IN">
+<var>${fruit}</var>
+<value>@{fruits}</value>
+<iter>
+<var name="${fruit}">apple</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.450" endtime="20250318 13:41:31.451"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.450" endtime="20250318 13:41:31.451"/>
+</iter>
+<iter>
+<var name="${fruit}">banana</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.451" endtime="20250318 13:41:31.452"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.451" endtime="20250318 13:41:31.452"/>
+</iter>
+<iter>
+<var name="${fruit}">cherry</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.452" endtime="20250318 13:41:31.452"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.452" endtime="20250318 13:41:31.452"/>
+</iter>
+<status status="PASS" starttime="20250318 13:41:31.450" endtime="20250318 13:41:31.452"/>
+</for>
+<status status="PASS" starttime="20250318 13:41:31.450" endtime="20250318 13:41:31.452"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.449" endtime="20250318 13:41:31.453"/>
+</test>
+<test id="s1-s1-t3" name="Assignment 3: Test Print Fruits" line="105">
+<kw name="Print User Info">
+<arg>name=John Doe</arg>
+<arg>age=30</arg>
+<arg>city=Bangkok</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Name: ${user_info["name"]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.454" endtime="20250318 13:41:31.455"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Age: ${user_info["age"]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.455" endtime="20250318 13:41:31.456"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>City: ${user_info["city"]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.456" endtime="20250318 13:41:31.457"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.454" endtime="20250318 13:41:31.457"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.453" endtime="20250318 13:41:31.457"/>
+</test>
+<test id="s1-s1-t4" name="Assignment 4: Greet User Without Name" line="109">
+<status status="FAIL" starttime="20250318 13:41:31.458" endtime="20250318 13:41:31.459">Test contains no keywords.</status>
+</test>
+<test id="s1-s1-t5" name="Test Greet User Without Name" line="110">
+<kw name="Greet User">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Hello, ${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.461" endtime="20250318 13:41:31.461"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.460" endtime="20250318 13:41:31.461"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.460" endtime="20250318 13:41:31.461"/>
+</test>
+<test id="s1-s1-t6" name="Test Greet User With Name" line="113">
+<kw name="Greet User">
+<arg>John</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Hello, ${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.463" endtime="20250318 13:41:31.463"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.463" endtime="20250318 13:41:31.464"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.462" endtime="20250318 13:41:31.464"/>
+</test>
+<test id="s1-s1-t7" name="Assignment 5: Test Print All Items with 3 Items" line="117">
+<status status="FAIL" starttime="20250318 13:41:31.465" endtime="20250318 13:41:31.465">Test contains no keywords.</status>
+</test>
+<test id="s1-s1-t8" name="Test Print All Items with 3 Items" line="119">
+<kw name="Print All Items">
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<for flavor="IN">
+<var>${item}</var>
+<value>@{items}</value>
+<iter>
+<var name="${item}">apple</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.467" endtime="20250318 13:41:31.468"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.467" endtime="20250318 13:41:31.468"/>
+</iter>
+<iter>
+<var name="${item}">banana</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.468" endtime="20250318 13:41:31.469"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.468" endtime="20250318 13:41:31.469"/>
+</iter>
+<iter>
+<var name="${item}">cherry</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.469" endtime="20250318 13:41:31.469"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.469" endtime="20250318 13:41:31.469"/>
+</iter>
+<status status="PASS" starttime="20250318 13:41:31.467" endtime="20250318 13:41:31.469"/>
+</for>
+<status status="PASS" starttime="20250318 13:41:31.467" endtime="20250318 13:41:31.470"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.466" endtime="20250318 13:41:31.470"/>
+</test>
+<test id="s1-s1-t9" name="Test Print All Items with 5 Items" line="122">
+<kw name="Print All Items">
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<arg>mango</arg>
+<arg>grape</arg>
+<for flavor="IN">
+<var>${item}</var>
+<value>@{items}</value>
+<iter>
+<var name="${item}">apple</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.472" endtime="20250318 13:41:31.473"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.472" endtime="20250318 13:41:31.473"/>
+</iter>
+<iter>
+<var name="${item}">banana</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.473" endtime="20250318 13:41:31.473"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.473" endtime="20250318 13:41:31.473"/>
+</iter>
+<iter>
+<var name="${item}">cherry</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.474" endtime="20250318 13:41:31.474"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.473" endtime="20250318 13:41:31.474"/>
+</iter>
+<iter>
+<var name="${item}">mango</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.474" endtime="20250318 13:41:31.475"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.474" endtime="20250318 13:41:31.475"/>
+</iter>
+<iter>
+<var name="${item}">grape</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.475" endtime="20250318 13:41:31.476"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.475" endtime="20250318 13:41:31.476"/>
+</iter>
+<status status="PASS" starttime="20250318 13:41:31.472" endtime="20250318 13:41:31.476"/>
+</for>
+<status status="PASS" starttime="20250318 13:41:31.471" endtime="20250318 13:41:31.476"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.471" endtime="20250318 13:41:31.476"/>
+</test>
+<test id="s1-s1-t10" name="Assignment 6: Global and Local Variables" line="126">
+<status status="FAIL" starttime="20250318 13:41:31.477" endtime="20250318 13:41:31.478">Test contains no keywords.</status>
+</test>
+<test id="s1-s1-t11" name="Set Global Variable" line="127">
+<kw name="Global Value">
+<var>${GLOBAL_VAR}</var>
+<msg timestamp="20250318 13:41:31.486" level="FAIL">No keyword with name 'Global Value' found.</msg>
+<status status="FAIL" starttime="20250318 13:41:31.483" endtime="20250318 13:41:31.486"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case: ${GLOBAL_VAR}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20250318 13:41:31.489" endtime="20250318 13:41:31.489"/>
+</kw>
+<kw name="Use Local Variable">
+<status status="NOT RUN" starttime="20250318 13:41:31.490" endtime="20250318 13:41:31.490"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case After Keyword: ${GLOBAL_VAR}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20250318 13:41:31.490" endtime="20250318 13:41:31.490"/>
+</kw>
+<status status="FAIL" starttime="20250318 13:41:31.479" endtime="20250318 13:41:31.490">No keyword with name 'Global Value' found.</status>
+</test>
+<test id="s1-s1-t12" name="Test Load Variables from YAML" line="134">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Name: ${user["name"]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.492" endtime="20250318 13:41:31.493"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Age: ${user["age"]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.493" endtime="20250318 13:41:31.494"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>City: ${user["city"]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.494" endtime="20250318 13:41:31.494"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.491" endtime="20250318 13:41:31.494"/>
+</test>
+<test id="s1-s1-t13" name="Age Verification" line="159">
+<kw name="Set Variable" library="BuiltIn">
+<var>${age}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20250318 13:41:31.497" level="INFO">${age} = 20</msg>
+<status status="PASS" starttime="20250318 13:41:31.496" endtime="20250318 13:41:31.497"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${age} &gt; 18</arg>
+<arg>Log To Console</arg>
+<arg>You are an adult</arg>
+<arg>ELSE IF</arg>
+<arg>${age} == 18</arg>
+<arg>Log To Console</arg>
+<arg>You just became an adult</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>You are underage</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>You are an adult</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.497" endtime="20250318 13:41:31.498"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.497" endtime="20250318 13:41:31.498"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.495" endtime="20250318 13:41:31.498"/>
+</test>
+<test id="s1-s1-t14" name="Print Fruit List" line="167">
+<kw name="Create List" library="BuiltIn">
+<var>${fruits}</var>
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20250318 13:41:31.499" level="INFO">${fruits} = ['apple', 'banana', 'cherry']</msg>
+<status status="PASS" starttime="20250318 13:41:31.499" endtime="20250318 13:41:31.500"/>
+</kw>
+<for flavor="IN">
+<var>${fruit}</var>
+<value>@{fruits}</value>
+<iter>
+<var name="${fruit}">apple</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.500" endtime="20250318 13:41:31.501"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.500" endtime="20250318 13:41:31.501"/>
+</iter>
+<iter>
+<var name="${fruit}">banana</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.501" endtime="20250318 13:41:31.501"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.501" endtime="20250318 13:41:31.501"/>
+</iter>
+<iter>
+<var name="${fruit}">cherry</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20250318 13:41:31.502" endtime="20250318 13:41:31.502"/>
+</kw>
+<status status="PASS" starttime="20250318 13:41:31.501" endtime="20250318 13:41:31.502"/>
+</iter>
+<status status="PASS" starttime="20250318 13:41:31.500" endtime="20250318 13:41:31.502"/>
+</for>
+<status status="PASS" starttime="20250318 13:41:31.499" endtime="20250318 13:41:31.502"/>
+</test>
+<test id="s1-s1-t15" name="Test Factorial Calculation" line="185">
+<kw name="Calculate Factorial">
+<var>${result}</var>
+<arg>5</arg>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${number} == 1</arg>
+<arg>Return From Keyword</arg>
+<arg>1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20250318 13:41:31.504" endtime="20250318 13:41:31.505"/>
+</kw>
+<kw name="Calculate Factorial">
+<var>${previous}</var>
+<arg>${number - 1}</arg>
+<msg timestamp="20250318 13:41:31.505" level="FAIL">Resolving variable '${number - 1}' failed: TypeError: unsupported operand type(s) for -: 'str' and 'int'</msg>
+<status status="FAIL" starttime="20250318 13:41:31.505" endtime="20250318 13:41:31.505"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${result}</var>
+<arg>${number} * ${previous}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20250318 13:41:31.506" endtime="20250318 13:41:31.506"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="NOT RUN" starttime="20250318 13:41:31.506" endtime="20250318 13:41:31.506"/>
+</kw>
+<status status="FAIL" starttime="20250318 13:41:31.504" endtime="20250318 13:41:31.506"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>120</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" starttime="20250318 13:41:31.507" endtime="20250318 13:41:31.507"/>
+</kw>
+<status status="FAIL" starttime="20250318 13:41:31.503" endtime="20250318 13:41:31.507">Resolving variable '${number - 1}' failed: TypeError: unsupported operand type(s) for -: 'str' and 'int'</status>
+</test>
+<doc>Template for Robot Framework Test Cases</doc>
+<status status="FAIL" starttime="20250318 13:41:31.270" endtime="20250318 13:41:31.508"/>
+</suite>
+<status status="FAIL" starttime="20250318 13:41:31.248" endtime="20250318 13:41:31.510"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="10" fail="5" skip="0" id="s1" name="Robot Framework">Robot Framework</stat>
+<stat pass="10" fail="5" skip="0" id="s1-s1" name="Assignment">Robot Framework.Assignment</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20250318 13:41:31.438" level="ERROR">Error in file 'C:\Users\user\Downloads\Doppio\Robot Framework\Assignment.robot' on line 7: Importing library 'YAMLLibrary' failed: ModuleNotFoundError: No module named 'YAMLLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\user\Downloads\Doppio\Robot Framework\lib
+  C:\Users\user\Downloads\Doppio\Robot Framework\resources
+  c:\Users\user\.vscode\extensions\d-biehl.robotcode-1.0.3\bundled\libs
+  c:\Users\user\.vscode\extensions\d-biehl.robotcode-1.0.3\bundled\tool\robotcode
+  C:\Users\user\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\user\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\user\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\user\AppData\Local\Programs\Python\Python311
+  C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+</errors>
+</robot>
