@@ -1,0 +1,3 @@
+***Settings***
+Resource                                  ../Common.robot
+
